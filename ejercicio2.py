@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 
 def agregar_ruido_sal_pimienta(imagen, probabilidad=0.01):
     """
-    Ejercicio 1: Aplicación de Filtro con cv2.filter2D()
     Agregamos ruido de sal y pimienta a una imagen.
     """
     imagen_ruido = np.copy(imagen)
@@ -49,8 +48,6 @@ def ejercicio2_filtro_manual():
     """
     Implementamos el manual de filtro.
     """
-
-
     try:
         img_original = cv2.imread(r'C:\Users\tanya\OneDrive\Escritorio\Procesamiento de imagenes\Trabajo Practico 2\317080.jpg', cv2.IMREAD_GRAYSCALE)
         if img_original is None:
@@ -80,12 +77,12 @@ def ejercicio2_filtro_manual():
     
     plt.subplot(1, 3, 2)
     plt.imshow(img_filtrada_manual, cmap='gray')
-    plt.title('Filtro de la Diapositiva 36 (manual)')
+    plt.title('Filtro manual')
     plt.axis('off')
     
     plt.subplot(1, 3, 3)
     plt.imshow(img_filtrada_promedio, cmap='gray')
-    plt.title('Filtro Promedio (filter2D) para comparación')
+    plt.title('Filtro Promedio (filter2D)')
     plt.axis('off')
     
     plt.tight_layout()

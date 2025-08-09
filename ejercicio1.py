@@ -35,7 +35,7 @@ def ejercicio1_filtro_filter2D():
     # Visualizamos la imagen filtrada para su análisis
     plt.subplot(1, 2, 2)
     plt.imshow(img_filtrada_ej1, cmap='gray')
-    plt.title('Filtro de la Diapositiva 35')
+    plt.title('Imagen aplicando el filtro 2D')
     plt.axis('off')
     plt.tight_layout()
     plt.show()
